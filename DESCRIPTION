@@ -1,0 +1,11 @@
+Package: genspatattr
+Type: Package
+Title: Generates skewed spatial attributes
+Version: 0.1.0
+Author: Sewanou Honfo and Brezesky Kotanmi and Eunice Gnanvi
+Maintainer: Sewanou Honfo <honfosewanou@gmail.com> and Brezesky Kotanmi <kotangaebrezesky@gmail.com> and Eunice Gnanvi <eunysgnanvi@gmail.com>
+Description: Generates spatial attributes that are skewed and dependent.
+License: none
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
