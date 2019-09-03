@@ -12,9 +12,7 @@
 #' @param mu the mean value
 #' @param v the variance value
 #' @param method a character string naming the the approach used to create spatial dependence between variables. The "standard" method centers two vectors and residuals from a linear model that fits both vectors. The "orthogonal" method centers two vectors et computes their correlation based on their angle cosine.
-#' @param dst a character string naming the distribution to be used for vectors generation.
-#' \item{skewnormal}{the skew-normal distribution is limited to a range of [0,1[ for the coefficient of skewness.}
-#' \item{lognormal}{the lognormal distribution allows a large range of coefficients skewness values.}   
+#' @param dst a character string naming the distribution to be used for vectors generation. "skewnormal" the skew-normal distribution is limited to a range of [0,1[ for the coefficient of skewness. "lognormal" the lognormal distribution allows a large range of coefficients skewness values.   
 #' 
 #' @return Returns a list:
 #' \item{spadata}{a matrix containing expected data.}

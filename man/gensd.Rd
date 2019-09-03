@@ -4,7 +4,7 @@
 \alias{gensd}
 \title{Attributes skewed and dependent}
 \usage{
-gensd (size, sk, dep, ...)
+gensd (size, sk = 1, dep = 0.5, mu = 0, v = 1,  method = "standard", dst = "skewnormal", ...)
 }
 \arguments{
 \item{size}{a vector of two elements specifying respectively the number of rows and columns of the matrix of attributes to be generated.}
@@ -12,6 +12,16 @@ gensd (size, sk, dep, ...)
 \item{sk}{a scalar that represents the skewness coefficient to be considered.}
 
 \item{dep}{a scalar that represents the dependence correlation between values within a given attribute.}
+
+\item{mu}{the mean value}
+
+\item{v}{the variance value}
+
+\item{method}{a character string naming the the approach used to create spatial dependence between variables. The "standard" method centers two vectors and residuals from a linear model that fits both vectors. The "orthogonal" method centers two vectors et computes their correlation based on their angle cosine.}
+
+\item{dst}{a character string naming the distribution to be used for vectors generation.
+\item{skewnormal}{the skew-normal distribution is limited to a range of [0,1[ for the coefficient of skewness.}
+\item{lognormal}{the lognormal distribution allows a large range of coefficients skewness values.}}
 }
 \value{
 Returns a list:
@@ -25,5 +35,5 @@ Generates spatial attributes that are skewed and dependent.
 
 }
 \author{
-Sewanou Honfo \url{<honfosewanou@gmail.com>}  and Brezesky Kotanmi \url{<kotangaebrezesky@gmail.com>} and Eunice Gnanvi \url{<eunysgnanvi@gmail.com>} / LABEF_08_2019
+Sewanou Honfo \url{<honfosewanou@gmail.com>}  and Brezesky Kotanmi \url{<kotangaebrezesky@gmail.com>} and Eunice Gnanvi \url{<eunysgnanvi@gmail.com>} and Chenangnon Tovissode \url{<chenangnon@gmail.com>} and Romain glèlè Kakaï \url{<glele.romain@gmail.com>}   / LABEF_08_2019
 }
