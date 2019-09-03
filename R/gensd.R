@@ -56,24 +56,25 @@ gensd <- function (size, sk = 0, dep = 0.5, mu = 0, v = 1, method = "standard",
     y2 <- rlnorm(n = size[2], mean = mu, sd = sqrt(sigma2))
   }
   
-  curve(sapply(x, FUN = sig), from = -15, to = 15)
-  
+
   if(method == "standard"){
     
     y <- scale(y2) * dep  +  scale(residuals(lm(y1~y2))) * sqrt(1 - (dep * dep))
   }
   
-  if(method == "cos"){
+  if(method == "orthogonal"){
     
     Y <- cbind(y2, y1)         
     Yctr <- scale(Y, center = TRUE, scale = FALSE)   
     Q <- tcrossprod(qr.Q(qr(Yctr[ , 1, drop=FALSE])))      
-    Yo <- (diag(size[1]) - Q) %*% Yctr[ , 2]                 
+    Yo <- (diag(size[2]) - Q) %*% Yctr[ , 2]                 
     Yc <- cbind(Yctr[ , 1], Yo)               
     Yf  <- Yc %*% diag(1 / sqrt(colSums(Yc^2)))  
     
     y <- Yf[ , 2] + (1 / tan(acos(dep))) * Yf[ , 1]
   }
+  
+  
     
   return(cbind(y2, y))
   
