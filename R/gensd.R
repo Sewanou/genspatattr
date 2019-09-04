@@ -84,7 +84,7 @@ gensd <- function (size, sk = 0, dep = 0.5, mu = 0, v = 1, method = "standard",
       x2 <- rlnorm(n = size[2], mean = mu, sd = sqrt(sigma2))
     }
   
-  res <- matrix(numeric(size[1] * size[2]), nrow = size[2])
+  res <- matrix(numeric((size[1] - 1) * size[2]), nrow = size[2])
   
   for(i in 1 : (size[1] - 1)){
     
