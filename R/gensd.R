@@ -84,15 +84,15 @@ gensd <- function (size, sk = 0, dep = 0.5, mu = 0, v = 1, method = "standard",
       x2 <- rlnorm(n = size[2], mean = mu, sd = sqrt(sigma2))
     }
   
-  res <- matrix(numeric((size[1] - 1) * size[2]), nrow = size[2])
+  res <- matrix(numeric(size[1] * size[2]), nrow = size[2])
   
-  for(i in 1 : (size[1] - 1)){
+  for(i in 1 : size[1]){
     
     res[,i] <- biv(k = size[2], y1 = x1, y2 = x2, r = dep, method = "standard")
     
   }
   
-  gdt <- t(cbind(c(x2), res))
+  gdt <- t(res)
   depa <- list(skewness.coef = sk, moy = mu, variance = v)
   
   return(list(spadata = gdt, init = depa))
