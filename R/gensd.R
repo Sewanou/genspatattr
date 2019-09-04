@@ -92,7 +92,7 @@ gensd <- function (size, sk = 0, dep = 0.5, mu = 0, v = 1, method = "standard",
     
   }
   
-  gdt <- t(cbind(x2, res))
+  gdt <- t(cbind(c(x2), res))
   depa <- list(skewness.coef = sk, moy = mu, variance = v)
   
   return(list(spadata = gdt, init = depa))
