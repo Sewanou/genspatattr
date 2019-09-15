@@ -186,7 +186,7 @@ gensd <- function(size, grid, sk = 1, dep = 0.5, mu = 0, v = 1,  method = "SAR",
 #' @param dst a character string naming the distribution to be used for vectors generation. "skewnormal" the skew-normal distribution is limited to a range of [0,1[ for the coefficient of skewness. "lognormal" the lognormal distribution allows a large range of coefficients skewness values.   
 #' @param method a character string naming the the approach used to create spatial dependence between variables. The "SAR" method is the Kapoor, Kelejian, and Prucha (2007)-spatial autoregressive random effects (SAR-RE) model. The "SARMA" method represents the Lee and Yu (2012) spatial autoregressive moving average random effects (SARMA-RE) model.
 #' @return Returns a list.
-#' \item{mat.attributes}{Multiple spatial dependent and skewed attributes generated}
+#' \item{mat.attributes}{Multiple spatial dependent and skewed attributes generated.}
 #' \item{spatial.dependence}{Racall of the spatial dependence existing within values of a given attribute generated}
 #' \item{skewness.coef}{Coefficient of skewness of spatial attributes generated.}
 #'
