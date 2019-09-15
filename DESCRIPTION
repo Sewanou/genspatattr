@@ -2,10 +2,27 @@ Package: genspatattr
 Type: Package
 Title: Generates skewed spatial attributes
 Version: 0.1.0
-Author: Sewanou Honfo and Brezesky Kotanmi and Eunice Gnanvi and Chenangnon Tovissode and Romain Glèlè Kakaï
+Authors@R: c(
+    person("Sewanou Hermann", "Honfo", , "honfosewanou@gmail.com", c("aut", "cre")),
+    person("Chenangnon Frederic", "Tovissode", , "chenangnon@gmail.com", role = "aut"),
+    person("Brezesky", "Kotanmi", , "kotangaebrezesky@gmail.com", role = "ctb"),
+    person("Eunice", "Gnanvi", , "eunysgnanvi@gmail.com", role = "ctb"),
+    person("Romain Lucas", "Glele Kakai", , "glele.romain@gmail.com", role = "aut")
+    )
 Maintainer: Sewanou Honfo <honfosewanou@gmail.com> and Brezesky Kotanmi <kotangaebrezesky@gmail.com> and Eunice Gnanvi <eunysgnanvi@gmail.com>
-Description: Generates spatial attributes that are skewed and dependent.
-License: none
+Description: Generates skewed spatial attributes.
+License: GPL(>=2)
+Depends: R (>= 3.6.0)
+Imports:
+      spdep,
+      VGAM,
+      e1071
+Suggests:
+      knitr
+URL: https://github.com/Sewanou/genspatattr.git
+BugReports: https://github.com/Sewanou/genspatattr/issues
 Encoding: UTF-8
 LazyData: true
+VignetteBuilder: knitr
 RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)

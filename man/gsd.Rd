@@ -31,8 +31,8 @@ Returns a list:
 \description{
 Generates a spatial dependent attributes of which skewness is provided as output.
 }
-\examples{
-
+\references{
+Mohadeseh Alsadat Farzammehr, Mohammad Reza Zadkarami & Geoffrey J. McLachlan (2019): Skew-normal generalized spatial panel data model, Communications in Statistics - Simulation and Computation, DOI: 10.1080/03610918.2019.1622718
 }
 \author{
 Sewanou Honfo \url{<honfosewanou@gmail.com>}  and Brezesky Kotanmi \url{<kotangaebrezesky@gmail.com>} and Eunice Gnanvi \url{<eunysgnanvi@gmail.com>} and Chenangnon Tovissode \url{<chenangnon@gmail.com>} and Romain glèlè Kakaï \url{<glele.romain@gmail.com>}   / LABEF_08_2019

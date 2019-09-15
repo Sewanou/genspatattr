@@ -29,9 +29,6 @@ Returns a gsd object.
 \description{
 Generates a spatial dependent attribute with a fixed skewness.
 }
-\examples{
-
-}
 \author{
 Sewanou Honfo \url{<honfosewanou@gmail.com>}  and Brezesky Kotanmi \url{<kotangaebrezesky@gmail.com>} and Eunice Gnanvi \url{<eunysgnanvi@gmail.com>} and Chenangnon Tovissode \url{<chenangnon@gmail.com>} and Romain glèlè Kakaï \url{<glele.romain@gmail.com>}   / LABEF_08_2019
 }
